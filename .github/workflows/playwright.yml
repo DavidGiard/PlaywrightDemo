@@ -25,7 +25,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      working-directory: path/to/playwright/folder # update accordingly
+      working-directory: /playwright
       env:
         # Regional endpoint for Playwright Workspaces
         PLAYWRIGHT_SERVICE_URL: ${{ secrets.PLAYWRIGHT_SERVICE_URL }}
