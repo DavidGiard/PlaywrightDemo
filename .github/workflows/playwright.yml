@@ -32,7 +32,7 @@ jobs:
         run: npx playwright test -c playwright.service.config.js --workers=20 --reporter=list,html --project=chromium
 
       - name: Upload Playwright report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-report
